@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("../img/1.png");
+    height: 730px;
+    background-size: cover;
+}
+
+#search-input {
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    width: 110px;
+}
+
+#search-input-icon {
+    background: transparent;
+    border: none;
+}
+
+.nav-link {
+    font-weight: bold;
+    height: 40px;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid black;
+}
+
+.banner-line-1 {
+    font-size: 5rem;
+    max-width: 650px;
+}
+
+.market-button {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    display: inline-block;
+    width: 160px;
+    padding: 5px 15px;
+    margin: 5px 15px;
+}
+
+@media screen and (max-width: 992px) {
+    .market-button {
+        margin: 5px 0px;
+    }
+}
+
+.market-button-listen {
+    font-size: 11px;
+}
+
+.market-button-podcasts {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.market-button-icon {
+    display: inline;
+    float: left;
+    font-size: 24px;
+    margin-right: 10px;
+
+}
+
+.episode-section, .hosts {
+    max-width: 1250px;
+    margin: 0px auto;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.track-name {
+    font-weight: bold;
+    padding-top: 0.5rem;
+}
+
+.track-time {
+    color: gray;
+}
+
+
+.episode-page {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.episode-player {
+    margin-top: -100px;
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 992px) {
+    .episode-player {
+        margin-top: 1rem;
+    }
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+.top-podcasts {
+    background-color: #F8F8F8;
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.top-podcasts-header {
+    text-align: center;
+}
+
+.card-episode-title {
+    border-bottom: 2px solid black;
+}
+
+.mauntains {
+    background-image: url("../img/15.png");
+    height: 700px;
+    background-size: cover;
+}
+
+.hosts-icons {
+    font-size: 2rem;
+}
+
+footer {
+   background-color: black;
+   color: white;
+   text-align: justify;
+}
+
+.footer-terms {
+    font-size: 13px;
+}

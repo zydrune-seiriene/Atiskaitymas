@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neduok Dieve</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/78e3caa608.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand header-logo " href="#">
+        <svg width="132" height="21" viewBox="0 0 132 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <rect y="0.507812" width="131.812" height="19.9844" fill="url(#pattern0)" />
+          <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_5_4246" transform="scale(0.00344828 0.0227273)" />
+            </pattern>
+            <image id="image0_5_4246" width="290" height="44"
+              xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAAAsCAYAAADBw7VyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxMThmMjg5ZC1mMDkzLTQ2MTAtOTY5MS1mZTkxMjI5Nzc3ZDQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RENBMkVDOTg3QzA3MTFFQjhCNUQ4MDExMkZBQkVBMTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RENBMkVDOTc3QzA3MTFFQjhCNUQ4MDExMkZBQkVBMTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1ODg1MzhhMy0zM2I0LTQ5NmYtYTc3MS0wNjliMjE1MmY3ODciIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDowNjVhN2M3MS01NmYzLTBmNGEtOTQ3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" />
+          </defs>
+        </svg>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" aria-current="page" href="#">Pages</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" aria-current="page" href="#">Podcast</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" aria-current="page" href="#">Blog</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" aria-current="page" href="#">Shop</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="d-flex">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="search-input-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input class="form-control me-2" id="search-input" type="search" placeholder="Search" aria-label="Search">
+        </div>
+        <a href="#">
+          <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.46875" width="5" height="5" rx="2.5" fill="black" />
+            <rect x="10" y="0.46875" width="5" height="5" rx="2.5" fill="black" />
+            <rect x="20" y="0.46875" width="5" height="5" rx="2.5" fill="black" />
+            <rect y="10.4688" width="5" height="5" rx="2.5" fill="black" />
+            <rect x="10" y="10.4688" width="5" height="5" rx="2.5" fill="black" />
+            <rect x="20" y="10.4688" width="5" height="5" rx="2.5" fill="black" />
+            <rect y="20.4688" width="5" height="5" rx="2.5" fill="black" />
+            <rect x="10" y="20.4688" width="5" height="5" rx="2.5" fill="black" />
+            <rect x="20" y="20.4688" width="5" height="5" rx="2.5" fill="black" />
+          </svg>
+        </a>
+      </div>
+    </nav>
+    <div class="banner p-5 m-5">
+      <h1 class="banner-line-1">New episode availible now</h1>
+      <p>Availible on Apple Soundcast and Spotify.</p>
+      <div>
+        <div class="market-button my-5">
+          <div class="market-button-icon">
+            <i class="fa-solid fa-podcast"></i>
+          </div>
+          <div class="market-button-listen">Listen on</div>
+          <div class="market-button-podcasts">Apple Podcasts</div>
+        </div>
+        <div class="market-button">
+          <div class="market-button-icon">
+            <i class="fa-brands fa-soundcloud"></i>
+          </div>
+          <div class="market-button-listen">Listen on</div>
+          <div class="market-button-podcasts">Soundcloud</div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container-fluid episode-section">
+    <div class="card shadow border-light episode-player">
+      <div class="row g-0">
+        <div class="col-md-2">
+          <img src="img/3.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-10 p-4">
+          <div class="row mb-1">
+            <div class="col-6">
+
+              <h5 class="card-title">Timmy Mike: the nature of design</h5>
+              <p class="card-text"><small class="text-body-secondary">Episode 1 • Microphone • 0:13</small></p>
+
+            </div>
+            <div class="col-4"></div>
+            <div class="col-0 col-md-2">
+              <a href="#" class="py-4 episode-page">Episode page <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div><img src="img/4.jpg" width="80%" height="40px">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-5">
+        <h2>Best places to find design inspiration</h2>
+        <div class="row py-3">
+          <div class="col-2">
+            <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1.40625" width="68" height="68" rx="34" stroke="#CECECE" stroke-width="2" />
+            </svg>
+          </div>
+          <div class="col-10 track-info">
+            <div class="track-name">Episode 1</div>
+            <div class="track-time">Category • 0:13</div>
+          </div>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+        </p>
+        <p>Ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.</p>
+        <a href="#" class="py-4 episode-page">Episode page <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="col-12 col-md-2"></div>
+      <div class="col-12 col-md-5">
+        <img src="img/2.png" width="100%">
+      </div>
+    </div>
+  </main>
+  <section class="container-fluid top-podcasts p-3">
+    <div class="top-podcasts-header my-5">
+      <h2> Top podcasts: </h2>
+      <p>Discover the selection of the most popular podcasts.</p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col">
+        <div class="card mb-3 shadow border-light" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="img/10.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body py-5">
+                <p class="card-text"><small class="text-body-secondary">Episode 7 • Technology</small></p>
+                <h6 class="card-title card-episode-title">SRKP selects:open your mind easy</h6>
+                <a href="#" class="py-4 episode-page">Episode page <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3 shadow border-light" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="img/6.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body py-5">
+                <p class="card-text"><small class="text-body-secondary">Episode 8 • Technology</small></p>
+                <h6 class="card-title card-episode-title">SRKP selects: keep your watch</h6>
+                <a href="#" class="py-4 episode-page">Episode page <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3 shadow border-light" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="img/7.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body py-5">
+                <p class="card-text"><small class="text-body-secondary">Episode 9 • Technology</small></p>
+                <h6 class="card-title card-episode-title">SRKP selects: to hide behind safe</h6>
+                <a href="#" class="py-4 episode-page">Episode page <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid episode-section">
+    <div class="row my-5">
+      <div class="col-10">
+        <h5>Essential episodes:</h5>
+      </div>
+      <div class="col-0 col-md-2">
+        <a href="#" class="py-4 episode-page">View all episodes <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+      <div class="col">
+        <div class="card shadow border-light">
+          <img src="img/8.png" class="card-img-top" alt="...">
+          <div class="card-body p-5">
+            <p class="card-text"><small class="text-body-secondary">Episode 1 • Technology</small></p>
+            <h6 class="card-title card-episode-title">SRKP selects: how the new ages work</h6>
+            <p class="card-text"><small class="text-body-secondary">Share <i
+                  class="fa-solid fa-square-share-nodes"></i></small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow border-light">
+          <img src="img/10.png" class="card-img-top" alt="...">
+          <div class="card-body p-5">
+            <p class="card-text"><small class="text-body-secondary">Episode 2 • Technology</small></p>
+            <h6 class="card-title card-episode-title">SRKP selects: a new mindset today</h6>
+            <p class="card-text"><small class="text-body-secondary">Share <i
+                  class="fa-solid fa-square-share-nodes"></i></small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow border-light">
+          <img src="img/11.png" class="card-img-top" alt="...">
+          <div class="card-body p-5">
+            <p class="card-text"><small class="text-body-secondary">Episode 3 • Technology</small></p>
+            <h6 class="card-title card-episode-title">SRKP selects: the latest trends now</h6>
+            <p class="card-text"><small class="text-body-secondary">Share <i
+                  class="fa-solid fa-square-share-nodes"></i></small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow border-light">
+          <img src="img/12.png" class="card-img-top" alt="...">
+          <div class="card-body p-5">
+            <p class="card-text"><small class="text-body-secondary">Episode 4 • Technology</small></p>
+            <h6 class="card-title card-episode-title">SRKP selects: organize your day</h6>
+            <p class="card-text"><small class="text-body-secondary">Share <i
+                  class="fa-solid fa-square-share-nodes"></i></small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow border-light">
+          <img src="img/13.png" class="card-img-top" alt="...">
+          <div class="card-body p-5">
+            <p class="card-text"><small class="text-body-secondary">Episode 5 • Technology</small></p>
+            <h6 class="card-title card-episode-title">SRKP selects: how to plan your work</h6>
+            <p class="card-text"><small class="text-body-secondary">Share <i
+                  class="fa-solid fa-square-share-nodes"></i></small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow border-light">
+          <img src="img/14.png" class="card-img-top" alt="...">
+          <div class="card-body p-5">
+            <p class="card-text"><small class="text-body-secondary">Episode 6 • Technology</small></p>
+            <h6 class="card-title card-episode-title">SRKP selects: trying the best phones</h6>
+            <p class="card-text"><small class="text-body-secondary">Share <i
+                  class="fa-solid fa-square-share-nodes"></i></small></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="mauntains mt-5">
+  </section>
+  <section class="container-fluid hosts">
+    <div class="row my-5">
+      <div class="col-10">
+        <h5>Meet your hosts:</h5>
+      </div>
+      <div class="col-0 col-md-2">
+        <a href="#" class="py-4 episode-page">View all of them <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+      <div class="col">
+        <div class="card shadow border-light">
+          <img src="img/16.png" class="card-img-top" alt="...">
+          <div class="card-body p-5">
+            <h6 class="card-title">Bella Jimenez</h6>
+            <p class="card-text"><small class="text-body-secondary">Creative Strategist</small></p>
+            <div class="hosts-icons">
+              <p class="card-text"><small class="text-body-secondary"><i class="fa-brands fa-square-facebook"></i> <i
+                    class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-square-twitter"></i></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow border-light">
+          <img src="img/17.png" class="card-img-top" alt="...">
+          <div class="card-body p-5">
+            <h6 class="card-title">Edwin Watson</h6>
+            <p class="card-text"><small class="text-body-secondary">Creative Strategist</small></p>
+            <div class="hosts-icons">
+              <p class="card-text"><small class="text-body-secondary"><i class="fa-brands fa-square-facebook"></i> <i
+                    class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-square-twitter"></i></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow border-light">
+          <img src="img/18.png" class="card-img-top" alt="...">
+          <div class="card-body p-5">
+            <h6 class="card-title">Caitlin Henderson</h6>
+            <p class="card-text"><small class="text-body-secondary">Creative Strategist</small></p>
+            <div class="hosts-icons">
+              <p class="card-text"><small class="text-body-secondary"><i class="fa-brands fa-square-facebook"></i> <i
+                    class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-square-twitter"></i></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <footer class="container-fluid p-5 mt-5">
+    <div class="row">
+      <div class="col-0 col-md-2 m-5">
+        <h6> Resonator <i class="fa-regular fa-registered"></i></h6>
+        <p class="footer-terms text-white-50">The great connection.</p>
+      </div>
+      <div class="col-0 col md-10 m-5">
+        <h6 class="mb-5">
+          We collaborate with ambicios brands and people;<br>
+          let's build something great together
+        </h6>
+        <div class="row row-cols-1 row-cols-md-3 text-white-50">
+          <div class="col mt-5">
+            <p>Start conversation:</p>
+            <p>
+              Podcast@example.com <br>
+              +2 767 544 4345:
+            </p>
+          </div>
+          <div class="col mt-5">
+            <p>Find us here:</p>
+            <p>
+              Brooklyn, NY 11201 <br>
+              United states:
+            </p>
+          </div>
+          <div class="col mt-5">
+            <p>Follow us on:</p>
+            <p>
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </p>
+
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 footer-terms mt-5 text-white-50">
+          <div class="col"> Terms & Conditions</div>
+          <div class="col"> Privacy Policy</div>
+          <div class="col"> <i class="fa-regular fa-copyright"></i> 2021 <span class="text-light">Qode Interactive</span>. All Rights Reserved</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
